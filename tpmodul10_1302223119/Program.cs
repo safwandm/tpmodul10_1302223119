@@ -18,8 +18,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UsePathBase("/api");
-
 app.UseAuthorization();
 
 app.MapControllers();
