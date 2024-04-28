@@ -38,9 +38,10 @@ namespace tpmodul10_1302223119.Controllers
         [HttpDelete("{id}")]
         public string DeleteMahasiswa(int id)
         {
+            string dlt_msg = $"{daftarMahasiswa[id].Nama} berhasil dihapus ke daftar";
             daftarMahasiswa.RemoveAt(id);
 
-            return $"{daftarMahasiswa[id].Nama} berhasil dihapus ke daftar";
+            return dlt_msg;
         }
     }
 }
